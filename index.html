@@ -1,83 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Your Name - Personal Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 800px; margin: 0 auto; background: #f9f9f9; color: #222; }
-        header { margin-top: 40px; text-align: center; }
-        nav { margin: 30px 0; text-align: center; }
-        nav a { margin: 0 15px; color: #2a5d9f; text-decoration: none; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-        section { margin-bottom: 36px; background: #fff; padding: 22px 26px; border-radius: 10px; box-shadow: 0 2px 8px #eee; }
-        h1, h2 { color: #2a5d9f; }
-        ul { padding-left: 18px; }
-        .contact { margin-top: 18px; font-size: 0.98em; }
-        .news-list { list-style: disc; }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my personal web page!</p>
-        <div class="contact">
-            Email: your@email.com<br>
-            Address: Your City, Country<br>
-            <a href="#">Google Scholar</a> | <a href="#">Github</a>
-        </div>
-    </header>
-    <nav>
-        <a href="#research">Research</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-    </nav>
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am currently a [Your Degree] student at [Your University].<br>
-            My research interests include [Your Research Interests].<br>
-            Last update: 2025-08-06
-        </p>
-    </section>
-    <section>
-        <h2>News and Highlights</h2>
-        <ul class="news-list">
-            <li>[2025/5] Gave a talk about [Topic] at [Event].</li>
-            <li>[2024/11] Invited to present [Project] at [Seminar].</li>
-            <li>[2024/09] Admitted to [University]!</li>
-            <li>[2024/09] Received [Award]!</li>
-            <li>[2024/08] Released [Resource or Guidance] <a href="#">[link]</a></li>
-        </ul>
-    </section>
-    <section id="research">
-        <h2>Research Summary</h2>
-        <ul>
-            <li>Area 1: [Description]</li>
-            <li>Area 2: [Description]</li>
-        </ul>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>[University], [Year-Year] – [Degree], GPA: X.X/4.0</li>
-            <li>[University], [Year-Year] – [Degree], GPA: X.X/4.0</li>
-        </ul>
-    </section>
-    <section id="experience">
-        <h2>Research Experience</h2>
-        <ul>
-            <li>Intern at [Institute], [Year-Month to Year-Month] – Topic: [Topic]</li>
-            <li>Lab Member at [Lab], [Year-Month to Year-Month] – Topic: [Topic]</li>
-        </ul>
-    </section>
-    <section>
-        <h2>Acknowledgement</h2>
-        <p>
-            Thanks to my friends, mentors, and collaborators:<br>
-            Prof. X, Dr. Y, Ms. Z, ...
-        </p>
-    </section>
-</body>
+---
+layout: default
+title: Cao Yang
+---
 
-</html>
+<section class="profile-card" id="home" aria-labelledby="profile-name">
+  <div class="profile-cover">
+    <div class="cover-copy" aria-hidden="true"></div>
+  </div>
+
+  <div class="profile-body">
+    <div class="profile-topline">
+      <img
+        class="profile-photo"
+        src="https://avatars.githubusercontent.com/u/197883571?v=4"
+        alt="Portrait of Cao Yang"
+      />
+      <div class="profile-actions" aria-label="Profile actions">
+        <a class="button button-primary" href="mailto:yangcao25@stu.pku.edu.cn">
+          <i data-lucide="mail" aria-hidden="true"></i>
+          Email
+        </a>
+        <a
+          class="button"
+          href="https://www.linkedin.com/in/yang-cao-381061386/?locale=en"
+        >
+          <i data-lucide="linkedin" aria-hidden="true"></i>
+          LinkedIn
+        </a>
+        <a class="button" href="https://github.com/qingguang0309">
+          <i data-lucide="github" aria-hidden="true"></i>
+          GitHub
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-grid">
+      <div class="profile-copy">
+        <p class="profile-status">Open to Research Collaboration</p>
+        <h1 id="profile-name">Cao Yang</h1>
+        <p class="profile-headline">PhD Candidate at Peking University</p>
+
+        <p class="profile-location">
+          <i data-lucide="map-pin" aria-hidden="true"></i>
+          Peking University
+        </p>
+        <p class="profile-summary">
+          I am a PhD candidate at Peking University working on AI4S (AI for
+          Science). [Add a longer description of your research focus here.]
+        </p>
+      </div>
+
+      <aside class="profile-snapshot" aria-label="Profile snapshot">
+        <dl>
+          <div>
+            <dt>Research Interests</dt>
+            <dd>AI4S (AI for Science)</dd>
+          </div>
+          <div>
+            <dt>Current Role</dt>
+            <dd>PhD Candidate, Peking University</dd>
+          </div>
+          <div>
+            <dt>Last Updated</dt>
+            <dd>Jul 03, 2026</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<div class="profile-layout">
+  <div class="profile-main-column">
+    <section class="section" id="news">
+      <div class="section-heading">
+        <p class="section-kicker">News</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <span class="timeline-date">[Month Year]</span>
+          <p>[News item — award, admission, talk, release, etc.]</p>
+        </article>
+        <article class="timeline-item">
+          <span class="timeline-date">[Month Year]</span>
+          <p>[News item]</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="Publication">
+      <div class="section-heading">
+        <p class="section-kicker">Publication</p>
+      </div>
+      <div class="featured-list">
+        <article class="featured-item">
+          <div class="featured-placeholder" aria-hidden="true"></div>
+          <div>
+            <p class="publication-tag">[Research Area]</p>
+            <h3><a href="#">[Paper Title]</a></h3>
+            <p class="publication-authors">
+              <strong>Cao Yang</strong>, [Co-authors]
+            </p>
+            <p class="publication-venue">[Venue / Year]</p>
+            <p class="publication-links">
+              <a href="#">Code</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="Education">
+      <div class="section-heading">
+        <p class="section-kicker">Education</p>
+      </div>
+      <div class="profile-list">
+        <article class="profile-row">
+          <div class="org-badge" aria-hidden="true">PKU</div>
+          <div>
+            <h3>Peking University</h3>
+            <p class="entry-period">2025 - Present</p>
+            <p class="role-title">PhD Candidate, [Program / Major]</p>
+            <p class="role-meta">Advisor: [Advisor Name]</p>
+          </div>
+        </article>
+
+        <article class="profile-row">
+          <div class="org-badge" aria-hidden="true">SDU</div>
+          <div>
+            <h3>Shandong University</h3>
+            <p class="entry-period">2021 - 2025</p>
+            <p class="role-title">[Degree], [Major]</p>
+            <p class="role-meta">GPA: [X.X / 4.0]</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="section-kicker">Experience</p>
+      </div>
+      <div class="profile-list">
+        <article class="profile-row">
+          <div class="org-badge" aria-hidden="true">[X]</div>
+          <div>
+            <h3>[Lab / Institution]</h3>
+            <p class="entry-period">[Year-Month to Year-Month]</p>
+            <p class="role-title">[Role]</p>
+            <p class="role-meta">Advisor: [Advisor Name]</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="Acknowledgements">
+      <div class="section-heading">
+        <p class="section-kicker">Acknowledgements</p>
+      </div>
+      <p>
+        I am grateful to the mentors, collaborators, and friends who have
+        supported my learning and research journey.
+        [Add names or a longer note here.]
+      </p>
+      <p class="mentor-links">
+        <a href="#">[Name]</a>
+        <a href="#">[Name]</a>
+      </p>
+    </section>
+  </div>
+</div>
