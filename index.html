@@ -3,198 +3,262 @@ layout: default
 title: Cao Yang · Peking University
 ---
 
-<section class="hero" id="home">
-  <img
-    class="avatar"
-    src="https://avatars.githubusercontent.com/u/197883571?v=4"
-    alt="Portrait of Cao Yang"
-    width="132"
-    height="132"
-  />
-  <div class="hero-copy">
-    <p class="eyebrow">PhD Candidate · Peking University</p>
+<section class="hero wrap" id="home">
+  <div class="hero-text">
+    <p class="eyebrow">PhD Candidate <span aria-hidden="true">—</span> Peking University</p>
     <h1>Cao Yang</h1>
     <p class="lede">
-      I build <strong>LLM research agents</strong> that find the right evidence and reach the
-      right answer.
+      I build LLM research agents that find the <em>right evidence</em> and reach the
+      <em>right answer</em>.
     </p>
-    <div class="chips" aria-label="Research interests">
-      <span>LLM Agents</span>
-      <span>Deep Research</span>
-      <span>Agent Evaluation</span>
-      <span>AI for Science</span>
-      <span>Bayesian Optimization</span>
+    <p class="interests">LLM agents <i>/</i> Deep research <i>/</i> Agent evaluation <i>/</i> AI for Science</p>
+    <p class="contacts">
+      <a href="mailto:yangcao25@stu.pku.edu.cn">Email</a>
+      <a href="https://github.com/qingguang0309">GitHub</a>
+      <a href="https://www.linkedin.com/in/yang-cao-381061386/?locale=en">LinkedIn</a>
+    </p>
+  </div>
+  <figure class="portrait">
+    <img
+      src="https://avatars.githubusercontent.com/u/197883571?v=4"
+      alt="Portrait of Cao Yang"
+      width="168"
+      height="168"
+    />
+    <figcaption>
+      <span class="now">Now</span>
+      <span class="now-line now-main">PhD Candidate, Peking University</span>
+      <span class="now-line">Core member of the KeenData team, No.&nbsp;1 on GAIA</span>
+    </figcaption>
+  </figure>
+</section>
+
+<section class="band" id="gaia" aria-labelledby="gaia-title">
+  <svg class="band-art" viewBox="0 0 520 360" aria-hidden="true">
+    <g fill="none" stroke="currentColor" stroke-width="1">
+      <circle cx="300" cy="180" r="60" opacity="0.55" />
+      <circle cx="300" cy="180" r="120" opacity="0.3" />
+      <circle cx="300" cy="180" r="190" opacity="0.16" />
+      <path d="M300 180 L152 96 M300 180 L430 60 M300 180 L474 214 M300 180 L372 330 M300 180 L170 286" opacity="0.4" />
+    </g>
+    <g fill="currentColor">
+      <circle cx="152" cy="96" r="4" /><circle cx="430" cy="60" r="4" /><circle cx="474" cy="214" r="4" />
+      <circle cx="372" cy="330" r="4" /><circle cx="170" cy="286" r="4" />
+    </g>
+    <circle class="band-art-hub" cx="300" cy="180" r="9" />
+  </svg>
+
+  <div class="wrap band-grid">
+    <div class="band-figure">
+      <p class="band-kicker">GAIA benchmark · official test set</p>
+      <p class="band-number">94.35<span>%</span></p>
+      <svg class="seal" viewBox="0 0 120 120" aria-label="Number 1 on the GAIA leaderboard" role="img">
+        <defs><path id="seal-arc" d="M60 60 m-44 0 a44 44 0 1 1 88 0 a44 44 0 1 1 -88 0" /></defs>
+        <circle cx="60" cy="60" r="57" /><circle cx="60" cy="60" r="33" />
+        <text class="seal-ring"><textPath href="#seal-arc" startOffset="0">GAIA LEADERBOARD · NOV 2026 · RANKED FIRST ·</textPath></text>
+        <text class="seal-no" x="60" y="56" text-anchor="middle">No.</text>
+        <text class="seal-one" x="60" y="80" text-anchor="middle">1</text>
+      </svg>
     </div>
-    <div class="actions">
-      <a class="btn btn-primary" href="mailto:yangcao25@stu.pku.edu.cn">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        Email
-      </a>
-      <a class="btn" href="https://github.com/qingguang0309">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-        GitHub
-      </a>
-      <a class="btn" href="https://www.linkedin.com/in/yang-cao-381061386/?locale=en">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-        LinkedIn
-      </a>
+
+    <div class="band-copy">
+      <h2 id="gaia-title">KeenData tops the GAIA leaderboard</h2>
+      <p>
+        GAIA is the standard benchmark for general AI assistants: 301 hidden test questions
+        that need multi-step web research, file reading and reasoning.
+      </p>
+      <p>
+        As a core member of the KeenData team, I am responsible for adapting and optimizing
+        the open-source MiroFlow framework; the resulting <strong>Keen AgenticOS</strong> ranks
+        first on the official leaderboard.
+      </p>
+      <p class="band-link">
+        <a href="https://huggingface.co/spaces/gaia-benchmark/leaderboard">View the leaderboard</a>
+        <span>Submitted 3 Nov 2026 · 284 of 301 correct</span>
+      </p>
     </div>
+
+    <dl class="levels">
+      <div style="--v: 97.85"><dt>Level 1</dt><dd>97.85<small>%</small></dd></div>
+      <div style="--v: 93.71"><dt>Level 2</dt><dd>93.71<small>%</small></dd></div>
+      <div style="--v: 89.8"><dt>Level 3</dt><dd>89.80<small>%</small></dd></div>
+    </dl>
   </div>
 </section>
 
-<section class="highlight" id="gaia" aria-labelledby="gaia-title">
-  <div class="highlight-head">
-    <p class="badge-rank">#1 on GAIA</p>
-    <h2 id="gaia-title">KeenData tops the GAIA leaderboard</h2>
-    <p>
-      GAIA is the standard benchmark for general AI assistants: 301 hidden test questions that
-      need multi-step web research, file reading and reasoning. As a core member of the
-      KeenData team, I am responsible for adapting and optimizing the open-source MiroFlow
-      framework; the resulting <strong>Keen AgenticOS</strong> ranks first on the official
-      leaderboard.
-    </p>
-  </div>
-
-  <div class="score-grid">
-    <div class="score-main">
-      <span class="score-value">94.35<small>%</small></span>
-      <span class="score-label">Overall · 284 / 301</span>
-    </div>
-    <div class="score-levels">
-      <div><span>Level 1</span><strong>97.85%</strong></div>
-      <div><span>Level 2</span><strong>93.71%</strong></div>
-      <div><span>Level 3</span><strong>89.80%</strong></div>
-    </div>
-  </div>
-  <p class="score-note">
-    Official test set, submitted 3 Nov 2026 ·
-    <a href="https://huggingface.co/spaces/gaia-benchmark/leaderboard">View the leaderboard ↗</a>
-  </p>
-</section>
-
-<section class="section" aria-labelledby="miroflow-title">
-  <div class="section-head">
-    <p class="kicker">Featured work</p>
-    <h2 id="miroflow-title">Adapting and optimizing MiroFlow for Keen AgenticOS</h2>
-    <p class="section-lede">
+<section class="chapter wrap" id="work" aria-labelledby="work-title">
+  <p class="chapter-label"><span>01</span> Featured work</p>
+  <div class="chapter-body">
+    <h2 id="work-title">Adapting and optimizing MiroFlow for Keen AgenticOS</h2>
+    <p class="chapter-lede">
       I adapted the open-source <a href="https://github.com/MiroMindAI/MiroFlow">MiroFlow</a>
-      research-agent framework for the KeenData team and optimized it around one idea:
-      a hard question is usually lost at the final judgment, not in search.
+      research-agent framework for the KeenData team and optimized it around one idea: a hard
+      question is usually lost at the final judgment, not in search.
     </p>
-  </div>
 
-  <div class="concept">
-    <h3>Adjudicating-hub agent</h3>
-    <p>
-      Sub-agents gather evidence; the main agent keeps every defensible candidate alive and
-      decides once, at the end. Like a Router–Worker design, but the hub's job is
-      <em>judgment</em>, not just dispatch.
-    </p>
+    <figure class="diagram">
+      <svg viewBox="0 0 760 250" role="img" aria-label="Adjudicating-hub agent: the hub sends neutral sub-tasks to workers, workers return evidence, the hub adjudicates once and issues a traceable verdict">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0 1 L9 5 L0 9" fill="none" stroke="currentColor" stroke-width="1.4" />
+          </marker>
+        </defs>
+        <g class="dg-lines" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M128 170 H318" marker-end="url(#arrow)" />
+          <path d="M442 170 H640" marker-end="url(#arrow)" />
+          <path d="M352 136 L262 66" marker-end="url(#arrow)" />
+          <path d="M380 126 V62" marker-end="url(#arrow)" />
+          <path d="M408 136 L498 66" marker-end="url(#arrow)" />
+        </g>
+        <g class="dg-workers">
+          <circle cx="250" cy="52" r="15" /><circle cx="380" cy="42" r="15" /><circle cx="510" cy="52" r="15" />
+        </g>
+        <circle class="dg-hub-ring" cx="380" cy="170" r="58" />
+        <circle class="dg-hub" cx="380" cy="170" r="44" />
+        <text class="dg-hub-label" x="380" y="176" text-anchor="middle">Hub</text>
+        <text class="dg-node" x="40" y="175">Question</text>
+        <text class="dg-node" x="652" y="175">Answer</text>
+        <text class="dg-node" x="250" y="20" text-anchor="middle">Worker</text>
+        <text class="dg-node" x="380" y="14" text-anchor="middle">Worker</text>
+        <text class="dg-node" x="510" y="20" text-anchor="middle">Worker</text>
+        <text class="dg-note" x="286" y="112" text-anchor="end"><tspan class="dg-num">1</tspan> neutral sub-tasks</text>
+        <text class="dg-note" x="474" y="112"><tspan class="dg-num">2</tspan> evidence, not conclusions</text>
+        <text class="dg-note" x="380" y="246" text-anchor="middle"><tspan class="dg-num">3</tspan> adjudicates once, at the end</text>
+        <text class="dg-note" x="541" y="160" text-anchor="middle"><tspan class="dg-num">4</tspan> traceable verdict</text>
+      </svg>
+      <figcaption>The adjudicating-hub agent: workers gather evidence, the hub judges.</figcaption>
+    </figure>
+
     <ol class="pillars">
-      <li><strong>Neutral orchestration</strong><span>Sub-tasks ask for data, never for a pre-chosen reading of the question.</span></li>
-      <li><strong>Evidence-first workers</strong><span>Workers return verbatim quotes, sources and archived values, not conclusions.</span></li>
-      <li><strong>Terminal adjudication</strong><span>Candidates are compared once, from the question-writer's point of view.</span></li>
-      <li><strong>Traceable verdict</strong><span>The final answer is transcribed from the evidence, never re-solved.</span></li>
+      <li>
+        <h3>Neutral orchestration</h3>
+        <p>Sub-tasks ask for data, never for a pre-chosen reading of the question.</p>
+      </li>
+      <li>
+        <h3>Evidence-first workers</h3>
+        <p>Workers return verbatim quotes, sources and archived values, not conclusions.</p>
+      </li>
+      <li>
+        <h3>Terminal adjudication</h3>
+        <p>Every defensible candidate stays alive; they are compared once, from the question-writer's point of view.</p>
+      </li>
+      <li>
+        <h3>Traceable verdict</h3>
+        <p>The final answer is transcribed from the evidence, never re-solved.</p>
+      </li>
+    </ol>
+
+    <dl class="notes">
+      <div><dt>Reliability</dt><dd>A launch gate (API preflight, smoke run, trace check) and a run guard that keep long evaluation runs safe.</dd></div>
+      <div><dt>Routing</dt><dd>Claude, GPT, Kimi and Gemini as interchangeable main models, with hardened audio, video and file-reading tools.</dd></div>
+      <div><dt>Output</dt><dd>Deterministic format checks and normalization, so a correct answer is never lost to formatting.</dd></div>
+      <div><dt>Integrity</dt><dd>Search and fetch filters that keep the agent away from leaked benchmark answers.</dd></div>
+    </dl>
+
+    <p><a class="more" href="https://github.com/qingguang0309/MiroFlow_GAIA_Keendata">Read the code: MiroFlow_GAIA_Keendata</a></p>
+  </div>
+</section>
+
+<section class="chapter wrap" id="projects" aria-labelledby="projects-title">
+  <p class="chapter-label"><span>02</span> Projects</p>
+  <div class="chapter-body">
+    <h2 id="projects-title">Selected open-source work</h2>
+    <ul class="index">
+      <li>
+        <a href="https://github.com/qingguang0309/MiroFlow_GAIA_Keendata">
+          <span class="index-name">MiroFlow_GAIA_Keendata</span>
+          <span class="index-desc">The research-agent pipeline above: multi-model routing, evidence discipline and a reliability gate for GAIA.</span>
+          <span class="index-tag">LLM agents</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/qingguang0309/BO4Geopolymer">
+          <span class="index-name">BO4Geopolymer</span>
+          <span class="index-desc">Bayesian optimization plus LLM literature reasoning that recommends the next experiments for geopolymer CO₂ sorbents.</span>
+          <span class="index-tag">AI for Science</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/qingguang0309/BO4DAC">
+          <span class="index-name">BO4DAC</span>
+          <span class="index-desc">A web platform that uses Bayesian optimization with uncertainty estimates to suggest sorbent formulations for direct air capture.</span>
+          <span class="index-tag">AI for Science</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/qingguang0309/academic-skills">
+          <span class="index-name">academic-skills</span>
+          <span class="index-desc">Claude skills for researchers: journal-grade figures, talk slides, manuscript polishing and Word formatting, with built-in quality checks.</span>
+          <span class="index-tag">Agent skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/qingguang0309/minimax-h3-video-pipeline">
+          <span class="index-name">minimax-h3-video-pipeline</span>
+          <span class="index-desc">A one-command pipeline on a single RTX 4090 D that turns a storyboard into a 60-second animated short in about 21 minutes.</span>
+          <span class="index-tag">Generative video</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/qingguang0309/llm-from-scratch-assignment1-basics">
+          <span class="index-name">LLM from scratch</span>
+          <span class="index-desc">Stanford CS336 Assignment 1: a tokenizer, a Transformer language model and its training loop, built from scratch.</span>
+          <span class="index-tag">Foundations</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="chapter wrap" id="news" aria-labelledby="news-title">
+  <p class="chapter-label"><span>03</span> News</p>
+  <div class="chapter-body">
+    <h2 id="news-title">Recent updates</h2>
+    <ol class="log">
+      <li><time datetime="2026-11">Nov 2026</time><p>KeenData's <strong>Keen AgenticOS</strong> reaches <strong>No. 1 on the GAIA leaderboard</strong> with 94.35%.</p></li>
+      <li><time datetime="2026-10">Oct 2026</time><p>Released <a href="https://github.com/qingguang0309/academic-skills">academic-skills</a> and <a href="https://github.com/qingguang0309/BO4Geopolymer">BO4Geopolymer</a>.</p></li>
+      <li><time datetime="2026-08">Aug 2026</time><p>Joined KeenData to adapt and optimize the MiroFlow research-agent framework.</p></li>
     </ol>
   </div>
-
-
-
-  <ul class="worklist">
-    <li><strong>Reliability engineering.</strong> A launch gate (API preflight, smoke run, trace check) and a run guard that keeps long evaluation runs safe.</li>
-    <li><strong>Multi-model routing.</strong> Claude, GPT, Kimi and Gemini as interchangeable main models, with hardened audio, video and file-reading tools.</li>
-    <li><strong>Deterministic output layer.</strong> Format checks and normalization, so a correct answer is never lost to formatting.</li>
-    <li><strong>Benchmark integrity.</strong> Search and fetch filters that keep the agent away from leaked benchmark answers.</li>
-  </ul>
-  <p><a class="link-arrow" href="https://github.com/qingguang0309/MiroFlow_GAIA_Keendata">Code: MiroFlow_GAIA_Keendata ↗</a></p>
 </section>
 
-<section class="section" id="projects" aria-labelledby="projects-title">
-  <div class="section-head">
-    <p class="kicker">Projects</p>
-    <h2 id="projects-title">Selected open-source work</h2>
-  </div>
-  <div class="cards">
-    <a class="card" href="https://github.com/qingguang0309/MiroFlow_GAIA_Keendata">
-      <span class="card-tag">LLM Agents</span>
-      <h3>MiroFlow_GAIA_Keendata</h3>
-      <p>The research-agent pipeline above: multi-model routing, evidence discipline and a reliability gate for GAIA.</p>
-      <span class="card-meta">Python</span>
-    </a>
-    <a class="card" href="https://github.com/qingguang0309/BO4Geopolymer">
-      <span class="card-tag">AI for Science</span>
-      <h3>BO4Geopolymer</h3>
-      <p>Bayesian optimization plus LLM literature reasoning that recommends the next experiments for geopolymer CO₂ sorbents.</p>
-      <span class="card-meta">Python</span>
-    </a>
-    <a class="card" href="https://github.com/qingguang0309/BO4DAC">
-      <span class="card-tag">AI for Science</span>
-      <h3>BO4DAC</h3>
-      <p>A web platform that uses Bayesian optimization with uncertainty estimates to suggest sorbent formulations for direct air capture.</p>
-      <span class="card-meta">Python</span>
-    </a>
-    <a class="card" href="https://github.com/qingguang0309/academic-skills">
-      <span class="card-tag">Agent Skills</span>
-      <h3>academic-skills</h3>
-      <p>Claude skills for researchers: journal-grade figures, talk slides, manuscript polishing and Word formatting, with built-in quality checks.</p>
-      <span class="card-meta">JavaScript · Python</span>
-    </a>
-    <a class="card" href="https://github.com/qingguang0309/minimax-h3-video-pipeline">
-      <span class="card-tag">Generative Video</span>
-      <h3>minimax-h3-video-pipeline</h3>
-      <p>A one-command pipeline on a single RTX 4090 D that turns a storyboard into a 60-second animated short in about 21 minutes.</p>
-      <span class="card-meta">Python · ComfyUI</span>
-    </a>
-    <a class="card" href="https://github.com/qingguang0309/llm-from-scratch-assignment1-basics">
-      <span class="card-tag">Foundations</span>
-      <h3>LLM from scratch</h3>
-      <p>Stanford CS336 Assignment 1: a tokenizer, a Transformer language model and its training loop, built from scratch.</p>
-      <span class="card-meta">Python</span>
-    </a>
-  </div>
-</section>
-
-<section class="section" id="news" aria-labelledby="news-title">
-  <div class="section-head">
-    <p class="kicker">News</p>
-    <h2 id="news-title">Recent updates</h2>
-  </div>
-  <ol class="timeline">
-    <li><time>Nov 2026</time><p>KeenData's <strong>Keen AgenticOS</strong> reaches <strong>#1 on the GAIA leaderboard</strong> with 94.35%.</p></li>
-    <li><time>Oct 2026</time><p>Released <a href="https://github.com/qingguang0309/academic-skills">academic-skills</a> and <a href="https://github.com/qingguang0309/BO4Geopolymer">BO4Geopolymer</a>.</p></li>
-    <li><time>Aug 2026</time><p>Joined KeenData to adapt and optimize the MiroFlow research-agent framework.</p></li>
-  </ol>
-</section>
-
-<section class="section" id="background" aria-labelledby="bg-title">
-  <div class="section-head">
-    <p class="kicker">Background</p>
+<section class="chapter wrap" id="background" aria-labelledby="bg-title">
+  <p class="chapter-label"><span>04</span> Background</p>
+  <div class="chapter-body">
     <h2 id="bg-title">Education and experience</h2>
-  </div>
-  <div class="rows">
-    <article class="row">
-      <div class="org org-pku" aria-hidden="true">PKU</div>
-      <div>
-        <h3>Peking University</h3>
-        <p class="row-role">PhD Candidate · AI for Science</p>
-      </div>
-      <time>2025 – present</time>
-    </article>
-    <article class="row">
-      <div class="org org-keen" aria-hidden="true">KD</div>
-      <div>
-        <h3>KeenData</h3>
-        <p class="row-role">Intern · LLM research agents for the GAIA benchmark</p>
-      </div>
-      <time>2026 – present</time>
-    </article>
-    <article class="row">
-      <div class="org org-sdu" aria-hidden="true">SDU</div>
-      <div>
-        <h3>Shandong University</h3>
-        <p class="row-role">Undergraduate studies</p>
-      </div>
-      <time>2021 – 2025</time>
-    </article>
+    <ul class="cv">
+      <li>
+        <span class="crest"><img src="/assets/logos/pku.svg" alt="Peking University seal" width="56" height="56" loading="lazy" /></span>
+        <div>
+          <h3>Peking University</h3>
+          <p>PhD Candidate · AI for Science</p>
+        </div>
+        <time datetime="2025-09">2025.09 – present</time>
+      </li>
+      <li>
+        <span class="crest"><img src="/assets/logos/keendata.png" alt="KeenData logo" width="56" height="56" loading="lazy" /></span>
+        <div>
+          <h3>KeenData</h3>
+          <p>Intern · LLM research agents for the GAIA benchmark</p>
+        </div>
+        <time datetime="2026-08">2026.08 – present</time>
+      </li>
+      <li>
+        <span class="crest"><img src="/assets/logos/decarbon.png" alt="DeCarbon Tech logo" width="56" height="56" loading="lazy" /></span>
+        <div>
+          <h3><a class="org-link" href="https://de-carbon.com.cn/about.html">DeCarbon Tech</a></h3>
+          <p>Intern · AI for CO₂-capture materials: <a href="https://github.com/qingguang0309/BO4DAC">BO4DAC</a> and <a href="https://github.com/qingguang0309/BO4Geopolymer">BO4Geopolymer</a></p>
+        </div>
+        <time datetime="2025-04">2025.04 – 2026.10</time>
+      </li>
+      <li>
+        <span class="crest"><img src="/assets/logos/sdu.svg" alt="Shandong University emblem" width="56" height="56" loading="lazy" /></span>
+        <div>
+          <h3>Shandong University</h3>
+          <p>Undergraduate studies</p>
+        </div>
+        <time datetime="2021-09">2021.09 – 2025.06</time>
+      </li>
+    </ul>
   </div>
 </section>

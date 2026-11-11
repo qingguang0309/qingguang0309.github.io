@@ -6,42 +6,46 @@
     <title>{{ page.title }}</title>
     <meta
       name="description"
-      content="Cao Yang — PhD candidate at Peking University. LLM research agents (GAIA #1 team, KeenData) and AI for Science."
+      content="Cao Yang — PhD candidate at Peking University. LLM research agents; core member of the KeenData team ranked #1 on the GAIA benchmark."
     />
     <meta property="og:title" content="{{ page.title }}" />
     <meta
       property="og:description"
-      content="LLM research agents and AI for Science. Part of the KeenData team ranked #1 on the GAIA benchmark."
+      content="LLM research agents. Core member of the KeenData team ranked #1 on the GAIA benchmark."
     />
     <meta property="og:image" content="https://avatars.githubusercontent.com/u/197883571?v=4" />
-    <meta name="theme-color" content="#0f172a" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="theme-color" content="#f5f2eb" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#131417" media="(prefers-color-scheme: dark)" />
+    <link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/assets/fonts/ibm-plex-sans-var.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
   <body>
-    <header class="topbar">
-      <nav class="topbar-inner" aria-label="Sections">
-        <a class="brand" href="#home">Cao Yang</a>
+    <header class="masthead">
+      <nav class="wrap masthead-inner" aria-label="Sections">
+        <a class="wordmark" href="#home">Cao Yang</a>
         <div class="nav-links">
           <a href="#gaia">GAIA</a>
+          <a href="#work">Work</a>
           <a href="#projects">Projects</a>
-          <a href="#news">News</a>
           <a href="#background">Background</a>
         </div>
       </nav>
     </header>
-    <main class="container">{{ content }}</main>
-    <footer class="site-footer">
-      <p>&copy; 2026 Cao Yang · Last updated Nov 2026</p>
-      <div class="footer-links">
-        <a href="mailto:yangcao25@stu.pku.edu.cn">Email</a>
-        <a href="https://github.com/qingguang0309">GitHub</a>
-        <a href="https://www.linkedin.com/in/yang-cao-381061386/?locale=en">LinkedIn</a>
+    <main>{{ content }}</main>
+    <footer class="colophon">
+      <div class="wrap">
+        <p class="colophon-line">
+          Open to research collaboration.
+          <a href="mailto:yangcao25@stu.pku.edu.cn">yangcao25@stu.pku.edu.cn</a>
+        </p>
+        <div class="colophon-meta">
+          <span>&copy; 2026 Cao Yang · Updated Nov 2026</span>
+          <span class="colophon-links">
+            <a href="https://github.com/qingguang0309">GitHub</a>
+            <a href="https://www.linkedin.com/in/yang-cao-381061386/?locale=en">LinkedIn</a>
+          </span>
+        </div>
       </div>
     </footer>
   </body>
